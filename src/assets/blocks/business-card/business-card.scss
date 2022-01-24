@@ -1,0 +1,214 @@
+.business-card {
+  background-color: $gray-light;
+  background-image: url("../img/mastercard-bg.png");
+  //background-size: contain;
+  background-position-x: 111%;
+  background-position-y: 63%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  @media (max-width: 900px) {
+    background-image: none;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    
+    @media (max-width: 1250px) {
+      flex-direction: column;
+    }
+  }
+  &__descr {
+    width: 100%;
+    max-width: 630px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+
+    @media (max-width: 1250px) {
+      max-width: 100%;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+  &__title {
+    margin: 0;
+    font-size: 68px;
+    line-height: 68px;
+
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0;
+
+    @media (max-width: 900px) {
+      font-size: 52px;
+      line-height: 52px;
+    }
+
+    @media (max-width: 430px) {
+      font-size: 42px;
+      line-height: 42px;
+    }
+  }
+  &__sub-title {
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+  }
+  &__list {
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    list-style-type: none;
+
+    &-item {
+      padding-left: 32px;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        margin-left: 7px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        background-color: $black;
+      }
+      &:not(:first-child) {
+        margin-top: 12px;
+      }
+    }
+  }
+  &__account-status {
+    margin-top: 32px;
+    padding: 18px 40px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+  }
+  &__trustpilot {
+    display: block;
+    margin-top: 32px;
+  }
+
+  &__video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 112px;
+    padding-bottom: 112px;
+
+    &-img {
+      position: absolute;
+      left: -56px;
+      bottom: 0;
+      align-self: flex-end;
+
+      @media (max-width: 1250px) {
+        left: 50%;
+        bottom: -150%;
+        transform: translateX(-50%);
+      }
+
+      @media (max-width: 1250px) {
+        bottom: -80%;
+      }
+
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1250px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  &__message {
+    position: absolute;
+    display: flex;
+    left: -48px;
+    bottom: 92px;
+    padding: 20px 20px 22px;
+    border-radius: 20px;
+    background-color: $blue;
+
+    font-family: Metropolis;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+
+    color: white;
+    z-index: 1;
+    &-img {}
+    &-text {
+      margin-left: 12px;
+      padding: 0 8px;
+    }
+
+    @media (max-width: 900px) {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      margin-top: 12px;
+    }
+  }
+
+  &__play {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    background: $black;
+    border-radius: 50%;
+    border: none;
+    margin: 68px 160px 0;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+
+    //&:before {
+    //  content: "";
+    //  position: absolute;
+    //  width: 100%;
+    //  height: 100%;
+    //  display: flex;
+    //  background-color: $black;
+    //  transform: scaleY(-1);
+    //}
+
+    &-icon {
+      margin-left: 12px;
+      z-index: 2;
+    }
+
+    &:hover {
+      //&:before {
+      //  transform: scaleX(-0.5);
+      //}
+      //background: radial-gradient(white, 1%, #222b55);
+    }
+
+    @media (max-width: 1250px) {
+      margin: 0;
+    }
+  }
+}

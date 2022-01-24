@@ -1,0 +1,45 @@
+.footer {
+  margin-top: 40px;
+  &__wrap {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__descr {
+    margin-top: 32px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    color: $gray;
+  }
+  &__menu {
+    display: flex;
+    gap: 0 32px;
+    margin-top: 64px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration: none;
+
+    &-item {
+      display: inline;
+
+      a {
+        color: $gray;
+        text-decoration: none;
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px 0;
+    }
+  }
+}
