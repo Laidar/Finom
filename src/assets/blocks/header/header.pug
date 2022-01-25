@@ -103,26 +103,35 @@ header.header
                                 p.dropdown__text Launch your business
                 a(href= "#").menu__item Blog
         .header-right
-            a.language.dropdown English
+            a.language.dropdown
+                .language__block
+                    .language__flag.language__flag_italia
+                    .language__text En
                 .dropdown__menu
                     .language__dropdown
                         .language__header LANGUAGE
                         .language__select
                             .language__item IT
-                            .language__item EN
+                            .language__item.language__item_active EN
                         .language__header COUNTRY
-                        .language__country.language__country_active
-                            .language__img
+
+                        label.language__country.language__country_active
+                            input(type="radio" name="country" value="1")
+                            .language__flag.language__flag_italia
                             .language__name Italia
-                        .language__country
-                            .language__img
+
+                        label.language__country
+                            input(type="radio" name="country" value="2")
+                            .language__flag.language__flag_france
                             .language__name France
-                        .language__country
-                            .language__img
+
+                        label.language__country
+                            input(type="radio" name="country" value="3")
+                            .language__flag.language__flag_deutschland
                             .language__name Deutschland
 
             a.sigIn Sign In
-            button.account-status Get card
+            button.account-status Get early access
 
         .mobile-menu
             .burger
@@ -137,16 +146,22 @@ header.header
                             .language__header LANGUAGE
                             .language__select
                                 .language__item IT
-                                .language__item EN
+                                .language__item.language__item_active EN
                             .language__header COUNTRY
-                            .language__country.language__country_active
-                                .language__img
+
+                            label.language__country.language__country_active
+                                input(type="radio" name="country" value="1")
+                                .language__flag.language__flag_italia
                                 .language__name Italia
-                            .language__country
-                                .language__img
+
+                            label.language__country
+                                input(type="radio" name="country" value="2")
+                                .language__flag.language__flag_france
                                 .language__name France
-                            .language__country
-                                .language__img
+
+                            label.language__country
+                                input(type="radio" name="country" value="3")
+                                .language__flag.language__flag_deutschland
                                 .language__name Deutschland
 
                 a(href="#").item Pricing
