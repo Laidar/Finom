@@ -12,16 +12,18 @@
                 li.business-card__list-item Team expenses ready for accounting with <span class="bold">receipts collected online</span>
                 li.business-card__list-item Plastic or virtual prepaid cards
 
-            button.account-status.business-card__account-status Get card
+            button.account-status.business-card__account-status
+                p.account-status__text Get card
 
-            img(src= "assets/img/trustpilot.webp" alt="trustpilot").business-card__trustpilot
+            img(src= "assets/img/trustpilot.webp" loading="lazy" alt="trustpilot").business-card__trustpilot
 
         .business-card__video
-            img(src= "assets/img/phone.webp" alt="video").business-card__video-img
+            img(src= "assets/img/phone.webp" srcset= "assets/img/phone-x2.webp 2x" loading="lazy" alt="video").business-card__video-img
 
             button.business-card__play
-                img(src= "assets/img/triangle.svg" alt="triangle").business-card__play-icon
+                img(src= "assets/img/triangle.svg" loading="lazy" alt="triangle").business-card__play-icon
+                .business-card__play-anim
 
             .business-card__message
-                img(src= "assets/img/print.svg" alt="print").business-card__message-img
+                img(src= "assets/img/print.svg" loading="lazy" alt="print").business-card__message-img
                 p.business-card__message-text ATM withdrawal limit <br>of 2000€ per month

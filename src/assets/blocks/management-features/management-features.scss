@@ -1,0 +1,68 @@
+.management-features {
+  margin-top: 40px;
+  &__wrap {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    border-radius: 24px;
+    background-color: $gray-light;
+
+    @media (max-width: 900px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+  &__title {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__items {}
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+  &__img {
+    max-width: 500px;
+    @media (max-width: 530px) {
+      width: 100%;
+    }
+  }
+  &__descr {
+    max-width: 580px;
+
+    @media (max-width: 900px) {
+      order: 1;
+    }
+  }
+  &__subtitle {
+    margin: 0;
+    font-family: Metropolis;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    &_blue {
+      color: $blue;
+    }
+  }
+  &__text {
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+  }
+
+  &__account-status {
+    display: block;
+    margin: 0 auto;
+    @media (max-width: 900px) {
+      margin-top: 43px;
+    }
+  }
+}

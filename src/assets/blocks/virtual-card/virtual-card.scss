@@ -8,11 +8,17 @@
     background-color: $blue;
   }
   &__bg {
+    width: 100%;
+    max-width: 400px;
     display: flex;
     margin-left: -20px;
 
     @media (max-width: 1320px) {
       display: none;
+    }
+
+    &-img {
+      width: 100%;
     }
   }
   &__descr {
@@ -57,8 +63,8 @@
     border-radius: 10px;
     box-sizing: border-box;
   }
-  &__sub-title {
-    margin-top: 12px;
+  &__subtitle {
+    margin: 12px 0 0 0;
     font-family: Metropolis;
     font-size: 20px;
     font-weight: 700;
@@ -72,11 +78,11 @@
   }
   &__account-status {
     margin-top: 64px;
-    padding: 18px 40px;
+    border: 1px solid #ff5762;
 
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 24px;
+    &:hover {
+      border: 1px solid white;
+    }
 
     @media (max-width: 500px) {
       width: 100%;
