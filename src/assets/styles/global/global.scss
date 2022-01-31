@@ -52,9 +52,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   overflow: hidden;
-
-  //box-shadow: inset 10px 10px 10px rgba(255,255,255,0.3),
-  //10px 10px 10px rgba(0,0,0,0.3);
+  z-index: 1;
 
   &:before {
     content: "";
@@ -71,10 +69,6 @@ body {
   }
 
   &:hover{
-    //color: $black;
-    //box-shadow: inset 5px 5px 5px rgba(0,0,0,0.3),
-    //inset -5px -5px 5px rgba(255,255,255,0.3);
-
     &:before {
       transform: scale(1);
     }
